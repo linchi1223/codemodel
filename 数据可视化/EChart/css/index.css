@@ -1,0 +1,244 @@
+/* 约束缩放 */
+@media screen and (max-width: 1024px) {
+	html {
+	  font-size: 42px !important;
+	}
+  }
+  @media screen and (min-width: 1920) {
+	html {
+	  font-size: 80px !important;
+	}
+  }
+  @font-face {
+	font-family: electronicFont;
+	src: url(../font/DS-DIGIT.TTF);
+  }
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: url(../img/bg.jpg) no-repeat center;
+	line-height: 1.15rem;
+}
+
+.head {
+	position: relative;
+	min-width: 1024px;
+	height: .8rem;
+	background: url(../img/head_bg.png) no-repeat;
+	color: white;
+	line-height: .8rem;
+}
+
+.head h1 {
+	text-align: center;
+	font-size: .475rem;
+}
+
+.head .Time {
+	position: absolute;
+	top: 0;
+	right: .5rem;
+	font-size: .375rem;
+}
+
+.panel {
+	max-width: 1920px;
+	min-width: 1024px;
+	margin: 0 auto;
+	padding: 0.125rem 0.125rem 0;
+	display: flex;
+	color: white;
+}
+
+.column {
+	flex: 3;
+	/* text-align: center; */
+	/* border: 1px solid white; */
+}
+
+.column:nth-child(2) {
+	flex: 5;
+	margin: 0 0.125rem 0.1875rem;
+}
+
+.column .info {
+	background: rgba(101, 132, 226, 0.1);
+	padding: 0.1875rem;
+	display: flex;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.column .infoitem {
+	flex: 4;
+	text-align: center;
+
+}
+
+.info .info-num {
+	color: sandybrown;
+	font-family: "electronicFont";
+	line-height: 1rem;
+	font-size: .5rem !important;
+	font-family: electronicFont;
+}
+
+.info .info-text {
+	line-height: 0.7rem;
+	font-size: 0.35rem !important;
+	color: antiquewhite;
+}
+
+.smallpanel {
+	position: relative;
+	height: 3.875rem;
+	
+	padding: 0 0.1875rem;
+	margin-bottom: .1875rem;
+	border: 1px solid rgba(25, 186, 139, 0.17);
+	background: url(../img/line.png) rgba(255, 255, 255, 0.05);
+}
+
+.smallpanel::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	border-top: 1px solid white;
+	border-left: 1px solid white;
+}
+
+.smallpanel::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 10px;
+	height: 10px;
+	border-right: 1px solid white;
+	border-top: 1px solid white;
+}
+
+.smallpanel h2 {
+	height: 0.6rem;
+	text-align: center;
+	color: white;
+	line-height: 0.6rem;
+	font-size: 0.25rem;
+}
+
+.smallpanelfottor {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	right: 0;
+}
+
+.smallpanelfottor::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+}
+
+.smallpanelfottor::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 10px;
+	height: 10px;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+.map {
+	height: 10.125rem;
+	position: relative;
+}
+
+.map .map1 {
+	background: url(../img/map.png);
+	width: 6.475rem;
+	height: 6.475rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-size: 100% 100%;
+	opacity: .6;
+}
+
+.map .map2 {
+	background: url(../img/lbx.png);
+	width: 8.0375rem;
+	height: 8.0375rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-size: 100% 100%;
+	animation: rotate1 15s linear infinite;
+	opacity: .6;
+}
+
+.map .map3 {
+	background: url(../img/jt.png);
+	width: 7.075rem;
+	height: 7.075rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-size: 100% 100%;
+	animation: rotate2 15s linear infinite;
+	opacity: .6;
+}
+
+.map .chartmap {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 10.125rem;
+}
+
+@keyframes rotate1 {
+	from {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+
+	to {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
+
+@keyframes rotate2 {
+	from {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+
+	to {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+}
+.contextpanel {
+	height: 100%;
+	width: 100%;
+	color: white !important;
+}
+.textcolor{
+	color: coral;
+}
+
